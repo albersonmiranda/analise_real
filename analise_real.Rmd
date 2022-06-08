@@ -1,0 +1,35 @@
+---
+title: "Introdução à Análise"
+author: "Alberson Miranda"
+date: "`r Sys.Date()`"
+bibliography: bib.bib
+output:
+  pdf_document:
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Este texto segue @elon2019. Então, a numeração dos teoremas e corolários aqui contidos são as daquele texto.
+
+# CONJUNTOS FINITOS, ENUMERÁVEIS E NÃO-ENUMERÁVEIS
+
+## BOA ORDENAÇÃO E O SEGUNDO PRINCÍPIO DE INDUÇÃO
+
+### TEOREMA 1. (Princípio da Boa Ordenação). *Todo subconjunto não-vazio* $A \subset \mathbb{N}$ possui um elemento mínimo. {.unnumbered}
+
+A ideia da demonstração aqui é partir de dois conjuntos, $X$ e $A$, de forma que $X = \{p \in \mathbb{N} \mid 1 \leq p \leq n\}$ e $A$ é formado pelos números maiores que $p = n$. Com essa estrutura, conseguimos demonstrar que se $p = n$ é o maior elemento em $X$, então um $p = n+1 \notin X$ e é o menor elemento em $A$.
+
+O mesmo raciocínio pode ser usado para demonstrar que qualquer subconjunto não vazio dos Naturais possui um elemento máximo.
+
+## CONJUNTOS FINITOS E INFINITOS
+
+### TEOREMA 3. *Seja $A \subset I_n$. Se existir uma bijeção $f:I_n \rightarrow A$, então $A = I_n$*.
+
+Suponha aqui que $A \neq I_n$ e prove por absurdo. Daqui também sai a demonstração do corolário 2, de que não pode haver uma bijeção de um conjunto infinito sobre uma parte própria dele.
+
+
+
+# REFERÊNCIAS
