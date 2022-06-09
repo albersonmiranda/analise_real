@@ -1,0 +1,41 @@
+---
+title: "Exercícios"
+author: "Alberson Miranda"
+date: "`r Sys.Date()`"
+bibliography: bib.bib
+output:
+  pdf_document:
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# SEÇÃO 1: LIMITE DE UMA SEQUÊNCIA
+
+**Exercício 3:**
+
+$$\forall \epsilon>0, \exists n_0 \in \mathbb{N} \mid n>n_0 \rightarrow |x_n-a| < \epsilon$$
+
+Pensando em desigualdade triangular e transitividade, temos que:
+
+$$||x_n|-|a|| \leq |x_n-a| < \epsilon $$
+
+Então,
+
+$$||x_n|-|a|| < \epsilon $$
+
+E, pela definição de limite, $lim|x_n| = |a|$.
+
+# SEÇÃO 2: LIMITES E DESIGUALDADES
+
+**Exercício 3:**
+
+Suponha que $x_n$ convirja para $a$. Isso significa que $\exists \epsilon > 0 \mid a \in (b-\epsilon, b+\epsilon)$, implicando em $a=b$, o que é absurdo.
+
+# SEÇÃO 3: OPERAÇÕES COM LIMITES
+
+**Exercício 1:**
+
+Podemos reescrever a raiz como potência, de forma que $\sqrt[n+p]n = n^\frac{1}{n+p}$. Sabendo que $1 \leq n^\frac{1}{n+p}$ e $n^\frac{1}{n+p} \leq n^\frac{1}{n}$, ou seja, $1 \leq n^\frac{1}{n+p} \leq n^\frac{1}{n}$, e $\lim 1 = 1$ e $\lim n^\frac{1}{n} = 1$ --- este calculado por recursividade no Excel pelo professor Rodolfo!  ---, pelo teorema do confronto temos que $\lim n^\frac{1}{n+p} = 1$.
